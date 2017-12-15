@@ -125,42 +125,6 @@ module.exports = {
                  collapseWhitespace:false,  //删除空白符与换行符
              }
         }),
-        // new HtmlWebpackPlugin({
-        //     template: __dirname + "/src/index.tmpl.html",  
-        //     filename: "a.html",
-        //     title: "This is a.html page",
-        //     inject:true,    
-        //     hash:true,
-        //     chunks:["main","a"],     
-        //     minify:{   
-        //          removeComments:false,     
-        //          collapseWhitespace:false,   
-        //      }
-        // }),
-        // new HtmlWebpackPlugin({
-        //     template: __dirname + "/src/index.tmpl.html",  
-        //     filename: "b.html",
-        //     title: "This is b.html page",
-        //     inject:true,    
-        //     hash:true,  
-        //     chunks:["b"],      
-        //     minify:{    
-        //          removeComments:false,    
-        //          collapseWhitespace:false,  
-        //      }
-        // }),
-        // new HtmlWebpackPlugin({
-        //     template: __dirname + "/src/index.tmpl.html",  
-        //     filename: "c.html",
-        //     title: "This is c.html page",
-        //     inject:true,    
-        //     hash:true,  
-        //     excludeChunks:["main"],    
-        //     minify:{     
-        //          removeComments:false,     
-        //          collapseWhitespace:false,   
-        //      }
-        // }),
         
         new webpack.HotModuleReplacementPlugin(),//热加载插件
         //new webpack.optimize.OccurrenceOrderPlugin(),
