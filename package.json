@@ -27,6 +27,7 @@
     "less": "^2.7.3",
     "less-loader": "^4.0.5",
     "node-sass": "^4.7.2",
+    "normalize.css": "^7.0.0",
     "postcss-loader": "^2.0.9",
     "precss": "^2.0.0",
     "react-transform-hmr": "^1.0.4",

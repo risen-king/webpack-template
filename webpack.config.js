@@ -111,7 +111,15 @@ module.exports = {
         ]
     },
     plugins: [
+        new webpack.HotModuleReplacementPlugin(),//热加载插件
+        extractCss,
+        extractSass,
+
         //new webpack.BannerPlugin('版权所有，翻版必究'),
+        //new webpack.optimize.OccurrenceOrderPlugin(),
+        //new webpack.optimize.UglifyJsPlugin(),
+        
+
         new HtmlWebpackPlugin({
             template: __dirname + "/src/index.tmpl.html",  //html模板路径
             filename: "index.html",
@@ -125,12 +133,6 @@ module.exports = {
                  collapseWhitespace:false,  //删除空白符与换行符
              }
         }),
-        
-        new webpack.HotModuleReplacementPlugin(),//热加载插件
-        //new webpack.optimize.OccurrenceOrderPlugin(),
-        //new webpack.optimize.UglifyJsPlugin(),
-        extractCss,
-        extractSass
 
     ],
     
