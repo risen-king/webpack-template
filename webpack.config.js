@@ -118,7 +118,7 @@ module.exports = {
         
 
         new HtmlWebpackPlugin({
-            template: __dirname + "/src/index.tmpl.html",  //html模板路径
+            template: __dirname + "/src/index.html",  //html模板路径
             filename: "index.html",
             title: "This is index.html page",
             //favicon:'./src/img/favicon.ico', //favicon路径
