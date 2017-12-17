@@ -27,11 +27,8 @@ const extractSass = new ExtractTextPlugin({
 
 module.exports = {
     entry: {
-        main: path.join(__dirname , "/src/script/main.js"),
-        //a:    path.join(__dirname , "/src/script/a.js"),
-        //b:    path.join(__dirname , "/src/script/b.js"),
-        //c:    path.join(__dirname , "/src/script/c.js"),
-        //inline:    path.join(__dirname , "/src/script/inline.js"),
+        main: path.join(__dirname , "/src/index.js"),
+         
     },
     output: {
         path: path.join(__dirname, "/dist"),//打包后的文件存放的地方
